@@ -1,0 +1,27 @@
+name: Update Stock Data
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # chạy mỗi ngày (UTC)
+  workflow_dispatch:     # cho phép chạy manual
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+ss
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install vnstock pandas
+
+      - name: Run script
+        run: |
+          python update_data.py
