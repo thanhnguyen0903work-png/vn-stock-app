@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install vnstock pandas
+         pip install vnstock==0.2.8 pandas
 
       - name: Run script
         run: |
