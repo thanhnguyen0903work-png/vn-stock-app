@@ -8,7 +8,7 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
-ss
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
