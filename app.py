@@ -66,7 +66,7 @@ def run_ml_model(df: pd.DataFrame):
     X = df[["lag1", "lag3", "ma_short", "ma_long"]]
     y = df["close"]
 
-    # Giữ một lát cắt test rất nhỏ để vẫn có MSE
+    # Keep a small test slice so MSE still appear
     test_len = min(5, max(1, len(df) // 5))
     split = len(df) - test_len
     X_train, X_test = X.iloc[:split], X.iloc[split:]
