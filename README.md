@@ -42,4 +42,7 @@ streamlit run app.py
 3) It will auto-install from `requirements.txt`. No secrets needed.  
 
 ## Screenshot
-Add your own screenshot (optional): run locally, capture the UI, save as `screenshot.png`, and reference it here.
+<img width="2553" height="983" alt="screenshot" src="https://github.com/user-attachments/assets/547aa052-01bf-429b-a14e-1b79534b8f7f" />
+<img width="2525" height="927" alt="screenshot2" src="https://github.com/user-attachments/assets/4b363562-8856-47f6-aedc-35445ef9ee61" />
+
+
