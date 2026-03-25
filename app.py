@@ -48,11 +48,11 @@ def run_ml_model(df: pd.DataFrame):
     if n < 15:
         raise ValueError("Too little price history (<15 bars). Please choose a longer range.")
 
-    # Chọn cửa sổ động phù hợp tập dữ liệu ngắn
+    #  Choose adaptive window suitable for short data range
     lag1 = 1
     lag3 = min(3, max(1, n // 10))
-    ma_short = min(10, max(3, n // 3))  # 3–10 phiên
-    ma_long = min(20, max(6, n // 2))   # 6–20 phiên
+    ma_short = min(10, max(3, n // 3))  # 3–10 
+    ma_long = min(20, max(6, n // 2))   # 6–20 
 
     df["lag1"] = df["close"].shift(lag1)
     df["lag3"] = df["close"].shift(lag3)
