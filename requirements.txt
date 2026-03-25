@@ -2,4 +2,4 @@ streamlit
 pandas
 plotly
 vnstock
-
+scikit-learn
